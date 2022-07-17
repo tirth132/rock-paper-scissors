@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+#nav-bar {
+    background-color: #1f2937;
+    padding: 1rem;
+}
+
+.page-logo-text {
+    font-size: 2rem;
+    margin: 0;
+}
