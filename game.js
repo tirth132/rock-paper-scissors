@@ -6,15 +6,12 @@ function computerMove() {
 }
 
 function playGame(playerMove, computerMove) {
-  let playerMoveIndex = moves.indexOf(playerMove);
-  let computerMoveIndex = moves.indexOf(computerMove);
+  let indexDiff = moves.indexOf(playerMove) - moves.indexOf(computerMove);
 
   let msg;
-  if (playerMoveIndex - computerMoveIndex == 1 ||
-    playerMoveIndex - computerMoveIndex == -2) {
+  if (indexDiff == 1 || indexDiff == -2) {
       msg = `You win! ${playerMove} beats ${computerMove}`;
-  } else if (playerMoveIndex - computerMoveIndex == -1 ||
-    playerMoveIndex - computerMoveIndex == 2) {
+  } else if (indexDiff == -1 || indexDiff == 2) {
       msg = `You lose! ${computerMove} beats ${playerMove}`;
   } else {
     msg = "It's a draw"
